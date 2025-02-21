@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '15122558'))
+API_HASH = environ.get('API_HASH', '43042882a789e5c2e8526d2da740b9c1')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7202587720:AAGeGv5VAreY4KYIspSL2V_3XEp6Ri7QhTQ")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -23,8 +23,8 @@ else:
 URL = environ.get("URL", "")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002217006806'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '941300567').split()]
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
